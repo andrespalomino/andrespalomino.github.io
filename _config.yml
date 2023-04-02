@@ -1,3 +1,38 @@
-theme: jekyll-theme-minimal
-title: Octocat's homepage
-description: Bookmark this to keep an eye on my project updates!
+---
+layout: default
+title: Your Name
+---
+
+<h1>Welcome to My Personal Website</h1>
+
+<p>Hi, my name is Your Name and I'm a developer based in Your City, Your Country. Here are a few things about me:</p>
+
+<ul>
+  <li>I'm interested in web development, machine learning, and data analysis.</li>
+  <li>I've worked on projects using Python, JavaScript, and SQL.</li>
+  <li>I'm currently learning React and Docker.</li>
+</ul>
+
+<h2>Projects</h2>
+
+<p>Here are some of the projects I've worked on:</p>
+
+<ul>
+  <li><a href="#">Project 1</a>: Description of project 1.</li>
+  <li><a href="#">Project 2</a>: Description of project 2.</li>
+  <li><a href="#">Project 3</a>: Description of project 3.</li>
+</ul>
+
+<h2>Blog</h2>
+
+<p>I also write about my experiences and learning on my blog. Check out my latest posts:</p>
+
+<ul>
+  {% for post in site.posts %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
+
+<h2>Contact</h2>
+
+<p>If you'd like to get in touch, feel free to email me at your@email.com or connect with me on LinkedIn.</p>
